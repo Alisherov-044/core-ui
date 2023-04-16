@@ -1,7 +1,13 @@
-import React from "react";
+import axios from "axios";
 
-const Axios = () => {
-  return <div>Axios</div>;
-};
+const BaseURL = "127.0.0.1:8000/api";
+
+function Axios(url) {
+  return axios(`${BaseURL}/${url}`)
+    .then((response) => response.data)
+    .catch((error) => {
+      throw error;
+    });
+}
 
 export default Axios;

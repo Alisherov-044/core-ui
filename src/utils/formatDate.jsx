@@ -1,7 +1,7 @@
-import React from "react";
+import { format } from "date-fns";
 
-const formatDate = () => {
-  return <div>formatDate</div>;
-};
+function formatDate(date) {
+  return format(date, "yyyy/mm/dd");
+}
 
 export default formatDate;

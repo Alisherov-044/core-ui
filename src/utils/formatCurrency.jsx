@@ -1,7 +1,11 @@
-import React from "react";
+let DOLLAR = Intl.NumberFormat("en-US", {
+  style: "currency",
+  currency: "USD",
+  maximumSignificantDigits: 3,
+});
 
-const formatCurrency = () => {
-  return <div>formatCurrency</div>;
-};
+function formatCurrency(number) {
+  return DOLLAR.format(number);
+}
 
 export default formatCurrency;
