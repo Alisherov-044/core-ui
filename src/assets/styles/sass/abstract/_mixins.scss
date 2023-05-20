@@ -67,32 +67,38 @@
 //***************//
 //* Media Quary *//
 //***************//
-@mixin for-phone-only {
-    @media (max-width: 599px) {
+@mixin breakpoint--sm($max-width: 480px) {
+    @media (max-width: $max-width) {
        @content; 
     }
 }
 
-@mixin for-tablet-portrait-up {
-    @media (min-width: 600px) {
+@mixin breakpoint--sm-extra($max-width: 600px) {
+    @media (max-width: $max-width) {
         @content; 
     }
 }
 
-@mixin for-tablet-landscape-up {
-    @media (min-width: 900px) {
+@mixin breakpoint--md($max-width: 768px) {
+    @media (max-width: $max-width) {
         @content; 
     }
 }
 
-@mixin for-desktop-up {
-    @media (min-width: 1200px) {
+@mixin breakpoint--lg($max-width: 900px) {
+    @media (max-width: $max-width) {
         @content; 
     }
 }
 
-@mixin for-big-desktop-up {
-    @media (min-width: 1800px) {
+@mixin breakpoint--x-lg($max-width: 1024px) {
+    @media (max-width: $max-width) {
+        @content; 
+    }
+}
+
+@mixin breakpoint--x-lg-extra($max-width: 1200px) {
+    @media (max-width: $max-width) {
         @content; 
     }
 }

@@ -1,11 +1,11 @@
 @use '../abstract/mixins';
-@use '../components/typography' as txt;
+@use './variables' as var;
 
 /****************
 ** Core Styles **
 ****************/
 :root {
-    font-size: txt.$font-size--default;
+    font-size: var.$font-size--default;
 }
 
 * {
@@ -40,7 +40,8 @@ li {
 }
 
 button,
-input {
+input,
+textarea {
     background: transparent;
     border: none;
     outline: none;
