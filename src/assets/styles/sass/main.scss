@@ -1,1 +1,13 @@
 @use './base/core';
+@use './layout/header.scss';
+@use './layout/footer.scss';
+@use './components/ui/ui.scss';
+@use './components/form/form.scss';
+
+/****************
+** Main Styles **
+****************/
+.main {
+    position: relative;
+    flex: 1 1 auto;
+}
