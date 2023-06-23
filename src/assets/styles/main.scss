@@ -1,7 +1,11 @@
+// Base
 @use './base/core';
+
+// Layouts
 @use './layout/header.scss';
 @use './layout/footer.scss';
-@use './components/ui/ui.scss';
+
+// Components
 @use './components/form/form.scss';
 
 /****************

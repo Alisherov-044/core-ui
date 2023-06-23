@@ -4,4 +4,4 @@ function formatDate(date) {
   return format(date, "yyyy/mm/dd");
 }
 
-export default formatDate;
+export { formatDate };

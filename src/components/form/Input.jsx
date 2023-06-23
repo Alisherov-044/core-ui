@@ -1,7 +1,3 @@
-import React from "react";
-
-const Input = () => {
+export const Input = () => {
   return <div>Input</div>;
 };
-
-export default Input;

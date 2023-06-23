@@ -68,37 +68,43 @@
 //* Media Quary *//
 //***************//
 @mixin breakpoint--sm($max-width: 480px) {
-    @media (max-width: $max-width) {
+    @media (max-width: #{$max-width + px}) {
        @content; 
     }
 }
 
 @mixin breakpoint--sm-extra($max-width: 600px) {
-    @media (max-width: $max-width) {
+    @media (max-width: #{$max-width + px}) {
         @content; 
     }
 }
 
 @mixin breakpoint--md($max-width: 768px) {
-    @media (max-width: $max-width) {
+    @media (max-width: #{$max-width + px}) {
         @content; 
     }
 }
 
 @mixin breakpoint--lg($max-width: 900px) {
-    @media (max-width: $max-width) {
+    @media (max-width: #{$max-width + px}) {
         @content; 
     }
 }
 
 @mixin breakpoint--x-lg($max-width: 1024px) {
-    @media (max-width: $max-width) {
+    @media (max-width: #{$max-width + px}) {
         @content; 
     }
 }
 
 @mixin breakpoint--x-lg-extra($max-width: 1200px) {
-    @media (max-width: $max-width) {
+    @media (max-width: #{$max-width + px}) {
         @content; 
+    }
+}
+
+@mixin media($max-width) {
+    @media (max-width: #{$max-width + px}) {
+        @content;
     }
 }
