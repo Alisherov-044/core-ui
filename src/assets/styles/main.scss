@@ -1,12 +1,19 @@
-// Base
-@use './base/core';
+// Abstract
+@import './abstract/mixins';
+@import './abstract/functions';
 
-// Layouts
-@use './layout/header.scss';
-@use './layout/footer.scss';
+// Base
+@import './base/variables';
+@import './base/core';
 
 // Components
-@use './components/form/form.scss';
+@import './components/form/input';
+@import './components/ui/buttons';
+@import './components/ui/icons';
+
+// Layouts
+@import './layouts/header.scss';
+@import './layouts/footer.scss';
 
 /****************
 ** Main Styles **

@@ -1,11 +1,8 @@
-@use '../abstract/mixins';
-@use './variables' as var;
-
 /****************
 ** Core Styles **
 ****************/
 :root {
-    font-size: var.$font-size--default;
+    font-size: $font-size--default;
 }
 
 * {
@@ -16,12 +13,12 @@
 
 html,
 body {
-    @include mixins.full-relative;
+    @include full-relative;
 }
 
 #root {
     @extend body;
-    @include mixins.d-flex(column, unset, unset);
+    @include d-flex(column, unset, unset);
 }
 
 a {
@@ -30,7 +27,7 @@ a {
 }
 
 img {
-    @include mixins.img-normalize;
+    @include img-normalize;
 }
 
 ol,
